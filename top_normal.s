@@ -1,5 +1,7 @@
   addi t0, zero, 10
   addi t1, zero, 20
+  lui a0, 0x80000
+  lui a1, 0x80000
   add t2, t0, t1
   xor t3, t0, t1
   or t4, t0, t1
@@ -8,7 +10,6 @@
   andi t2, t0, 8
   slli t3, t0, 2
   srli t4, t0, 2
-  lui a0, 0x80000
   add t5, zero, t0
   add t6, t0, t1
   sb t0, 0(a0)
