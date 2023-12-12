@@ -15,9 +15,10 @@
   sb t0, 0(a0)
   sw t1, 0x100(a0)
   beq t6, t0, jump1
-  jal a7, 0x00008
+  jal a7, jump0
   slli a5, t0, 2
   srli a6, t0, 2
+jump0:
   lb t2, 0(a0)
   sb t3, 0x100(a0)
   beq t5, t0, jump1
