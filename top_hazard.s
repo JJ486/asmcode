@@ -8,3 +8,6 @@
   lui a0, 0x80000
   sw t0, 0x100(a0)
   lw a1, 0x100(a0)
+  add a2, a1, t0
+  add a3, a1, t1
+  add a4, a1, t2
