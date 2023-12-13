@@ -12,6 +12,7 @@ jump1:
   add t6, t4, t5
   lui a0, 0x80000
 jump2:
+  lui a0, 0x80000
   sw t0, 0x100(a0)
   lw a1, 0x100(a0)
   jal a1, jump3
