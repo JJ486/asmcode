@@ -52,7 +52,8 @@ next:
 
     addi a0, zero, '!'
     sb a0, 0(t0)
-    lw a1, 0(t0)
 
 end:
+    lui a1, 0x80000
+    lw a2, 0x100(a1)
     beq zero, zero, end 
