@@ -9,6 +9,7 @@ jump1:
   addi t2, t0, 30
   addi t3, t0, 40
   jal t2, jump2
+  addi t0, zero, 10
   add t6, t4, t5
   lui a0, 0x80000
 jump2:
