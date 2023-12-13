@@ -8,7 +8,6 @@ loop:
     beq zero, zero, loop
 
 next:   
-    # store result
     lui t0, 0x80000
     sw t2, 0x100(t0)
 
@@ -54,6 +53,4 @@ next:
     sb a0, 0(t0)
 
 end:
-    lui a1, 0x80000
-    lw a2, 0x100(a1)
     beq zero, zero, end 
